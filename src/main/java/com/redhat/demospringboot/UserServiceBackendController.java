@@ -26,8 +26,8 @@ public class UserServiceBackendController {
     public UserObject getUser(@PathVariable String userId) {
     	log.info("User services with "+userId);
     	UserObject user=new UserObject();
-    	user.setName("test");
-    	user.setUserId("0001");
+    	user.setName("I am "+userId);
+    	user.setUserId(userId);
         return user;
     }
 
